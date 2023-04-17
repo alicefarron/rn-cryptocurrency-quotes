@@ -22,26 +22,3 @@
 * react-navigation
 * MobX (тут его использование минимально)
 
-### Структура папок проекта
-
-src/
-|-- shared/
-|   |-- api
-|   |-- config
-|   |-- helpers
-|   |-- hooks
-|   |-- state
-|   |-- styles
-|   |-- types
-|   |-- ui
-|-- widgets/
-|   |-- about-app
-|   |-- interval-selection
-|   |-- rate-header
-|   |-- rate-table
-|   |-- switch-screen-button
-|-- pages/
-|   |-- about
-|   |-- rate
-|-- app
-
