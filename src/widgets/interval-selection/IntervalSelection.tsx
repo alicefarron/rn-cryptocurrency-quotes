@@ -7,10 +7,6 @@ import styles from './styles';
 import intervalListData from './IntervalListData';
 
 const IntervalSelection = observer(() => {
-  const handleUpdateIntervalChange = (interval: number) => {
-    timer.setTimerValue(interval);
-  };
-
   return (
     <View>
       <CustomText>Выберите интервал обновления таблицы</CustomText>
@@ -20,7 +16,7 @@ const IntervalSelection = observer(() => {
           <TouchableOpacity
             key={item.value}
             style={styles.button}
-            onPress={() => handleUpdateIntervalChange(item.value)}>
+            onPress={() => timer.setTimerValue(timer.seconds)}>
             <Text style={styles.buttonText}>{item.title}</Text>
           </TouchableOpacity>
         ))}

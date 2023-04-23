@@ -28,6 +28,7 @@ const RateTable: React.FC = observer(() => {
   const tagListQuery = async () => {
     try {
       const res = await RateService.getRate();
+      setRequestError('');
       setData(res);
     } catch (err) {
       setRequestError(err);
